@@ -8,7 +8,7 @@ class Boat < ActiveRecord::Base
   end
 
   def self.dinghy
-    # where("length < 20")
+    where("length < 20")
   end
 
   def self.ship
@@ -43,3 +43,4 @@ class Boat < ActiveRecord::Base
     # order('length DESC').first
   end
 end
+d
